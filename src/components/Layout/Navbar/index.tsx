@@ -4,8 +4,8 @@ import { logout, useGetAccountInfo } from '@elrondnetwork/dapp-core';
 import { faWallet, faPowerOff } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import EGLD from 'assets/EGLD';
 import Logo from 'assets/Logo';
+import STAKEGLD from 'assets/STAKEGLD';
 
 import { network } from 'config';
 import { denominated } from 'helpers/denominate';
@@ -43,7 +43,7 @@ const Navbar: FC = () => {
     <nav className={`${styles.nav} delegation-nav`}>
       <Link to='/dashboard' className={styles.heading}>
         <span className={styles.logo}>
-          <EGLD />
+          <STAKEGLD />
         </span>
 
         <span className={styles.title}>Delegation Manager</span>

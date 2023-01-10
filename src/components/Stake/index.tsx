@@ -98,7 +98,7 @@ const Stake: FC = () => {
           <div className={styles.logo}>
             <Logo />
 
-            <div style={{ background: '#2044F5' }} className={styles.subicon}>
+            <div style={{ background: '#C99027' }} className={styles.subicon}>
               <FontAwesomeIcon icon={faLock} />
             </div>
           </div>

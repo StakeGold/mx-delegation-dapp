@@ -10,6 +10,8 @@ import { useLocation } from 'react-router-dom';
 import routes, { routeNames } from 'routes';
 import Navbar from './Navbar';
 
+import styles from './styles.module.scss';
+
 const Layout = ({ children }: { children: ReactNode }) => {
   const { search } = useLocation();
   const { address } = useGetAccountInfo();
@@ -18,7 +20,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <div className='layout d-flex flex-column flex-fill wrapper'>
       {Boolean(address) && <Navbar />}
 
-      <main className='d-flex flex-column flex-grow-1'>
+      <main className={`d-flex flex-column flex-grow-1 ${styles.mainbg}`}>
         <AuthenticatedRoutesWrapper
           routes={routes}
           unlockRoute={`${routeNames.unlock}${search}`}
